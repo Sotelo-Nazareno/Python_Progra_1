@@ -1,4 +1,5 @@
 import random
+import os
 
 def verificar_ganador_ronda(jugador, maquina)->str:
     """
@@ -33,10 +34,11 @@ def verificar_estado_partida(aciertos_jugador, aciertos_maquina, ronda_actual)->
     Devuelve si la partida sigue en curso
     """
     en_cuerso = True
-    if(aciertos_jugador == 2 or aciertos_maquina == 2):
+    if(ronda_actual == 2 and 
+    (aciertos_jugador == 2 or
+    aciertos_maquina == 2)):
         en_cuerso = False
-    else:
-        ronda_actual += 1
+
     return(en_cuerso)
 
 
@@ -116,7 +118,6 @@ def jugar_piedra_papel_tijera()->str:
         ronda_numero += 1
         print(f"""El ganador de esta ronda es: {verificar_ganador_ronda(jugada_usuario, jugada_maquina)}
         Ronda Nº{ronda_numero}""")
-
 
 
     if verificar_ganador_partida(puntos_jugador,puntos_maquina) == "Jugador":
