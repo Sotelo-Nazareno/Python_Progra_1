@@ -59,7 +59,7 @@ def aplicacion(lista_a:list, lista_b:list, lista_c:list)->None:
                     print(mensaje_error)
             case 4:
                 if not(vl.verificar_matriz_vacia(matriz=matriz_datos)):
-                    fn.recorrer_matriz_cxf(fn.filtrar_matriz(matriz=matriz_datos, indice="nombre" , digito="#"))
+                    fn.recorrer_matriz_cxf(fn.filtrar_matriz(matriz=matriz_datos, categoria="nombre" , digito="#"))
                 else:
                     print(mensaje_error)
             case 5:
@@ -97,7 +97,7 @@ def aplicacion(lista_a:list, lista_b:list, lista_c:list)->None:
                     print(mensaje_error)
             case 11:
                 if not(vl.verificar_matriz_vacia(matriz=matriz_datos)):
-                    fn.recorrer_matriz_cxf(fn.filtrar_por_promedio(matriz=(fn.filtrar_matriz(matriz=matriz_datos, indice="nombre" , digito="#")), fila="vistas", modo="mayor"))
+                    fn.recorrer_matriz_cxf(fn.filtrar_por_promedio(matriz=(fn.filtrar_matriz(matriz=matriz_datos, categoria="nombre" , digito="#")), fila="vistas", modo="mayor"))
                 else:
                     print(mensaje_error)
             case 12:

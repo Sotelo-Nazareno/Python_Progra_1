@@ -217,5 +217,5 @@ def filtrar_por_orden(matriz:list[list], tipo:str, modo:str)->list[list]:
         if matriz[indice_a_filtrar][indice_columna] in numero_seleccionados:
             for indice_fila in range(cantidad_filas):
                 valor_actual = matriz[indice_fila][indice_columna]
-                matriz_filtrada[indice_a_filtrar].append(valor_actual)
+                matriz_filtrada[indice_fila].append(valor_actual)
     recorrer_matriz_cxf(matriz_filtrada)

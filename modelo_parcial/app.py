@@ -68,7 +68,7 @@ def aplicacion(lista_a:list, lista_b:list, lista_c:list, lista_d:list)->None:
                     print(mensaje_error)
             case 7:
                 if not(vl.verificar_matriz_vacia(matriz=matriz_datos)):
-                    fn.buscar_elementos()
+                    fn.recorrer_matriz_cxf(fn.filtrar_titulo(matriz=matriz_datos,tipo='titulo', frase='En Vivo'))
                 else:
                     print(mensaje_error)
             case 8:

@@ -83,7 +83,7 @@ def mapear_indice(seccion:str)->int:
             return 2
 
 
-def filtrar_matriz(matriz:list[list], indice:str, digito:str)->list[list]:
+def filtrar_matriz(matriz:list[list], categoria:str, digito:str)->list[list]:
     """
     Filtra una matriz en base a un indice dado por el usuario
 
@@ -100,7 +100,7 @@ def filtrar_matriz(matriz:list[list], indice:str, digito:str)->list[list]:
         [],
         []
     ]
-    indice_a_filtrar = mapear_indice(indice)
+    indice_a_filtrar = mapear_indice(categoria)
     cantidad_filas = len(matriz)
     cantidad_columnas = len(matriz[indice_a_filtrar])
 
